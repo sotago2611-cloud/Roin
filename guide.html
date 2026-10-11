@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ROIN</title>
+        <link rel="manifest" href="manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="ROIN">
+        <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png">
+    </head>
+    <body>
+        <h1>アプリをホーム画面に追加してください</h1>
+        <h3>iPhoneの場合は下の「共有ボタン（ない場合は...をタップ）」から「ホーム画面に追加」を選択してください。</h3>
+        <h3>androidの場合は「...」から「ホーム画面に追加」→「インストール」をタップしてください。</h3>
+        <h2>iPhoneの場合はsafari、Androidの場合はchromeで開いてください。</h2>
+        <img src="guide.gif" alt="ホーム画面に追加する操作手順">
+        <script>
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+          }
+        </script>
+    </body>
+</html>
